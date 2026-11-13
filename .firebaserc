@@ -1,0 +1,4 @@
+{
+  "projects": { "default": "buyora-b8586" },
+  "targets": { "buyora-b8586": { "hosting": { "legal": ["buyora-legal"] } } }
+}
