@@ -154,3 +154,43 @@ footer.site {
 footer.site a { color: var(--muted); }
 
 footer.site nav a { margin-right: 14px; display: inline-block; }
+
+/* Download page */
+.download .hero { text-align: center; padding: 28px 0 8px; }
+.download .logo { width: 240px; max-width: 70%; height: auto; display: block; margin: 0 auto 14px; }
+.download .lead { font-size: 1.08rem; color: var(--text); max-width: 30em; margin: 0 auto 22px; }
+.btn-download {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; max-width: 420px; margin: 0 auto;
+  min-height: 60px; padding: 14px 20px;
+  background: var(--brand-bright); color: #fff;
+  font-size: 1.15rem; font-weight: 800; text-decoration: none;
+  border-radius: 14px; box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35);
+}
+.btn-download:hover, .btn-download:focus-visible { background: #e65f00; }
+.btn-download:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+.btn-download svg { flex: none; }
+.download .version { color: var(--muted); font-size: 0.92rem; margin-top: 10px; }
+.steps { list-style: none; padding: 0; counter-reset: step; }
+.steps li {
+  counter-increment: step;
+  display: flex; gap: 14px; align-items: flex-start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 16px; margin: 0 0 12px;
+}
+.step-icon {
+  flex: none; position: relative; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--brand-soft); color: var(--brand-bright);
+  display: flex; align-items: center; justify-content: center;
+}
+.step-icon svg { width: 24px; height: 24px; }
+.step-icon::after {
+  content: counter(step); position: absolute; top: -4px; right: -4px;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--brand-bright); color: #fff;
+  font-size: 0.75rem; font-weight: 800; line-height: 20px; text-align: center;
+}
+.steps strong { display: block; font-size: 1.05rem; }
+.steps div span { color: var(--muted); font-size: 0.95rem; }
+.download .help { margin-top: 20px; }
+.legal-links { color: var(--muted); font-size: 0.92rem; margin-top: 20px; }

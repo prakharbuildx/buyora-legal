@@ -3,6 +3,9 @@
     "target": "legal",
     "public": "public",
     "cleanUrls": false,
+    "rewrites": [
+      { "source": "/download", "destination": "/download.html" }
+    ],
     "headers": [
       {
         "source": "**",
